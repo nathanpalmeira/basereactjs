@@ -23,7 +23,7 @@
    
     "start": "node server.js",
     
-    "postinstall": "ng build --aot --prod"
+    "postinstall": "npm run build --prod"
   },
   "eslintConfig": {
     "extends": "react-app"
