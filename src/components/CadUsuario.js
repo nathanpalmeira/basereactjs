@@ -26,9 +26,9 @@ export default class CadUsuario extends Component {
   
   contactBack(nData,crud){
     
-    // console.log(nData)
-    // alert(123)
-    axios.post(`http://127.0.0.1:5000/usuario/${crud}`,
+    console.log(nData)
+    alert(123)
+    axios.post(`${global.api}/usuario/${crud}`,
     nData,
         {
             headers: { 
@@ -51,7 +51,7 @@ export default class CadUsuario extends Component {
     //     }
     // })
     
-    axios.get(`http://127.0.0.1:5000/usuario/s`)
+    axios.get(`${global.api}/usuario/s`)
     .then(response => {  
         // console.log(response.data);  
         this.setState({  

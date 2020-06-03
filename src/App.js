@@ -167,6 +167,11 @@ export default function Dashboard() {
     setAnchorEl(null);
   };
 
+  const closeLogin = () => {
+    localStorage.removeItem('@systemacacia/login'); 
+    window.location.reload();
+  };
+  
 
   
 
@@ -188,7 +193,9 @@ export default function Dashboard() {
             Acácia Gold
           </Typography>
           {/* <div className={classes.sair}> */}
-          <IconButton color="inherit">
+          <IconButton color="inherit"
+          onClick={closeLogin}
+          >
             <Badge color="secondary">
               <h6>Sair</h6>
             </Badge>

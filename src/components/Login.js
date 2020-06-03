@@ -15,6 +15,8 @@ import Container from '@material-ui/core/Container';
 
 import axios from 'axios'; 
 
+import '../global.js'
+
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -48,9 +50,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-
+// console.log(global.api)
 const contactBack = (login,pass) =>{
-    axios.post(`https://backendacacia.herokuapp.com/login`,
+    axios.post(`${global.api}/login`,
     {
         "login":login,
         "pass":pass
@@ -63,7 +65,7 @@ const contactBack = (login,pass) =>{
     ).then(response => {  
         if(response.data==="sucesso"){
             localStorage.setItem('@systemacacia/login', login);
-            alert(login)
+            // alert(login)
             window.location.reload();
         }else{
             alert("Usuário ou Senha invalido. Se persistir contate o administrato.")
