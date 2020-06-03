@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "node server/server.js",
-    
+     
     "postinstall": "npm run build --prod"
   },
   "eslintConfig": {
