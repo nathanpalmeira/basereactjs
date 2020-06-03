@@ -24,7 +24,6 @@
   },
   "scripts": {
     "start": "node server/server.js",
-    "build": "npm run build --prod",
     
     "postinstall": "npm run build --prod"
   },
