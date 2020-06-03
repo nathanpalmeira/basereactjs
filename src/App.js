@@ -35,6 +35,8 @@ import { Switch, Route } from 'react-router-dom'
 // import Usuario from './components/Usuario';
 import CadUsuario from './components/CadUsuario';
 import Home from './components/Home';
+import Calcular from './components/Calcular';
+
 
 
 
@@ -227,7 +229,7 @@ export default function Dashboard() {
             {/* <Route exact path="/cadusuario" render={(props) => <Usuario {...props} />}/>  */}\
             <Route exact path="/" render={(props) => <Home />}/> 
             <Route exact path="/cadusuario" render={(props) => <CadUsuario {...props} />}/> 
-            {/* <Route exact path="/login" render={(props) => <Login {...props} />}/>  */}
+            <Route exact path="/calcular" render={(props) => <Calcular {...props} />}/> 
           </Switch>
             
         <Box pt={4}>

@@ -27,15 +27,23 @@ export default class CadUsuario extends Component {
   contactBack(nData,crud){
     
     console.log(nData)
-    alert(123)
+    // alert(123)
     axios.post(`${global.api}/usuario/${crud}`,
     nData,
         {
             headers: { 
-                'Content-Type' : 'application/json' 
+                'Content-Type' : 'application/json' ,
+                // 'Access-Control-Allow-Origin': "*"
+                // "Access-Control-Request-Method": "POST ",
+                // "Access-Control-Request-Headers": "X-PINGOTHER, Content-Type"
             }
         }
     )
+    // axios({
+    //   method: 'POST',
+    //   url: `${global.api}/usuario/${crud}`,
+    //   data: nData
+    // })
     window.location.reload(false);
   }
   

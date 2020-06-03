@@ -12,15 +12,17 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "express-favicon": "^2.0.1",
+    "final-form": "^4.20.0",
+    "final-form-material-ui": "^0.3.0",
     "material-table": "^1.59.0",
     "path": "^0.12.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-final-form": "^6.5.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1"
   },
   "scripts": {
-   
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
